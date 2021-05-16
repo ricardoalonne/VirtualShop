@@ -39,7 +39,8 @@ export default function Products() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         {
-            data.map(product => (
+            data.filter(product => product.stock > 0)
+            .map(product => (
                 <Grid item xs={12} sm={6} md={4} lg={3} >
                     <Product key={product.id} product={product}/>
                 </Grid>

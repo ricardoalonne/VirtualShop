@@ -1,15 +1,25 @@
 //import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/client/Navbar';
-//import Product from './components/client/Product';
 import Products from './components/client/Products';
+import CheckOutPage from './components/client/CheckOutPage';
+import {Switch, BrowserRouter as Router, Route} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      {/*<Product></Product>*/}
-      <Products></Products>
+      <Router>
+        <Navbar/>
+        <Switch>
+          <Route path="/checkout-page">
+            <CheckOutPage/>
+          </Route>
+
+          <Route path="/">
+            <Products/>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

@@ -13,6 +13,9 @@ import ShareIcon from '@material-ui/icons/Share';
 //import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { AddShoppingCart } from '@material-ui/icons';
 import accounting from "accounting"
+import { actionTypes } from '../../helpers/reducer';
+
+import { useStateValue } from '../../helpers/StateProvider';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,11 +37,21 @@ const useStyles = makeStyles((theme) => ({
   },
   expandOpen: {
     transform: 'rotate(180deg)',
+  },
+  cardRating: {
+    display:"flex",
+  },
+  cardActions: {
+    display: "flex",
+    justifyContent: "space-between",
+    textAlign: "center",
   }
 }));
 
 export default function Product({product}) {
   const classes = useStyles();
+  const [{basket}, dispatch] = useStateValue()
+
   //const [expanded, setExpanded] = React.useState(false);
   
   /*
@@ -46,6 +59,27 @@ export default function Product({product}) {
     setExpanded(!expanded);
   };
   */
+
+  const addToBasket = () => {
+    dispatch(
+      {
+        type: actionTypes.ADD_TO_BASKET,
+        item:{
+          id: product.id,
+          name: product.name,
+          description: product.description,
+          stock: product.stock,
+          price: product.price,
+          image: product.image,
+          rating: product.rating,
+          state: product.state,
+          idProductType: product.idProductType,
+          idCategory: product.idCategory,
+        }
+      }
+    )
+  }
+
   return (
     <Card className={classes.root}>
       <CardHeader
@@ -72,7 +106,8 @@ export default function Product({product}) {
         {product.description}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing>
+      <CardActions disableSpacing className={classes.cardActions}>
+        <div className={classes.cardRating}>
         {
             Array(product.rating)
             .fill()
@@ -81,6 +116,8 @@ export default function Product({product}) {
                 )
             )
         }
+        </div>
+
         {/*
         <IconButton
           className={clsx(classes.expand, {
@@ -93,13 +130,15 @@ export default function Product({product}) {
           <ExpandMoreIcon />
         </IconButton>
         */}
-        
-          <IconButton aria-label="add to cart">
-            <AddShoppingCart />
-          </IconButton>
-          <IconButton aria-label="share">
-            <ShareIcon />
-          </IconButton>
+          <div>
+            <IconButton aria-label="add to cart" onClick={addToBasket}>
+              <AddShoppingCart fontSize="large" />
+            </IconButton>
+            <IconButton aria-label="share">
+              <ShareIcon />
+            </IconButton>
+          </div>
+          
         </CardActions>
       {/*
       <Collapse in={expanded} timeout="auto" unmountOnExit>

@@ -8,6 +8,8 @@ import IconButton from '@material-ui/core/IconButton';
 //import MenuIcon from '@material-ui/icons/Menu';
 import { ShoppingCart } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
+import { Link } from 'react-router-dom';
+import { useStateValue } from '../../helpers/StateProvider';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Navbar() {
   const classes = useStyles();
+  const [{basket}, dispatch] = useStateValue()
 
   return (
     <div className={classes.root}>
@@ -47,19 +50,27 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           */}
-          <Typography variant="h6" /*className={classes.title}*/>
-            VirtualShop
-          </Typography>
-          
+          <Link to="/">
+            <IconButton>
+              <Typography variant="h6" /*className={classes.title}*/>
+                VirtualShop
+              </Typography>
+            </IconButton>
+          </Link>
+
+
           <div className={classes.grow}></div>
           
           <div className={classes.button}>
+            <Link to="checkout-page">
+              <IconButton aria-label="add to cart">
+                  <Badge badgeContent={basket?.length} color="secondary">
+                      <ShoppingCart fontSize="large" style={{ color: "white", opacity:"0.8" }} />
+                  </Badge>
+              </IconButton>
+            </Link>
+            
             <Button color="inherit">Iniciar Sesión</Button>
-            <IconButton aria-label="add to cart">
-                <Badge badgeContent={2} color="secondary">
-                    <ShoppingCart fontSize="large" style={{ color: "white", opacity:"0.8" }} />
-                </Badge>
-          </IconButton>
           </div>
         </Toolbar>
       </AppBar>

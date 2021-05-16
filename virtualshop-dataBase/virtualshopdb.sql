@@ -183,7 +183,7 @@ CREATE TABLE `product` (
   KEY `id_typeProduct_product_idx` (`idProductType`),
   CONSTRAINT `id_category_product` FOREIGN KEY (`idCategory`) REFERENCES `category` (`id`) ON UPDATE CASCADE,
   CONSTRAINT `id_typeProduct_product` FOREIGN KEY (`idProductType`) REFERENCES `producttype` (`id`) ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -192,7 +192,7 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
-INSERT INTO `product` VALUES (1,'Manzana','Manzana roja chilena.',10,0.20,'https://www.cuerpomente.com/medio/2021/01/07/propiedades-manzana_ce1ad220_1200x1200.jpg',5,'stock',1,3),(2,'Plátano','Platano de Isla',30,0.25,'https://www.salud.mapfre.es/media/2020/03/pl%C3%A1tano-1280x720.jpg',4,'stock',1,3),(3,'Tomate','Tomate rojo de campo',18,0.15,'https://www.65ymas.com/uploads/s1/22/69/84/tomate.jpeg',3,'stock',1,3),(4,'Apio','Apio verde serrano',3,1.00,'https://frutasyverduras.info/wp-content/uploads/2018/07/apio.jpg',5,'stock',1,2),(5,'Perejil','Perejil verde de campo',10,1.00,'https://www.tureceta.net/wp-content/uploads/2020/07/Para-que-sirve-el-te-de-perejil.jpg',4,'stock',1,2);
+INSERT INTO `product` VALUES (1,'Manzana','Manzana roja chilena.',10,0.20,'https://www.cuerpomente.com/medio/2021/01/07/propiedades-manzana_ce1ad220_1200x1200.jpg',5,'stock',1,3),(2,'Plátano','Platano de Isla.',30,0.25,'https://www.salud.mapfre.es/media/2020/03/pl%C3%A1tano-1280x720.jpg',4,'stock',1,3),(3,'Tomate','Tomate rojo de campo.',18,0.15,'https://www.65ymas.com/uploads/s1/22/69/84/tomate.jpeg',3,'stock',1,3),(4,'Apio','Apio verde serrano.',3,1.00,'https://frutasyverduras.info/wp-content/uploads/2018/07/apio.jpg',5,'stock',1,2),(5,'Perejil','Perejil verde de campo.',10,1.00,'https://www.tureceta.net/wp-content/uploads/2020/07/Para-que-sirve-el-te-de-perejil.jpg',4,'stock',1,2),(6,'Guisantes','Guisantes verdosos.',0,0.05,'https://static1.abc.es/media/bienestar/2020/06/30/guisante-kubB--620x349@abc.jpeg',3,'stock',1,3),(7,'Brocoli','Brolocoly costeño.',5,2.00,'https://www.ecestaticos.com/image/clipping/7fbc742e3e95b2febfd128a3be1b782b/la-razon-por-la-que-no-debes-hervir-el-brocoli-bajo-ningun-concepto.jpg',2,'stock',1,3),(8,'Espinacas','Espinaca de Campo.',1,0.50,'https://i.blogs.es/5ee30a/istock-522189977/1366_2000.jpg',1,'stock',1,3),(9,'Kale','Verdura muy rica en calcio.',0,1.50,'https://canalcocina.es/medias/_cache/zoom-2c5dd00de2bf6174ead8eb340fc6945c-920-518.jpg',2,'stock',1,3);
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -230,4 +230,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-15 21:41:14
+-- Dump completed on 2021-05-16  2:05:03

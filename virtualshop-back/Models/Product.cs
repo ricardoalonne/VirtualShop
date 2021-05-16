@@ -9,7 +9,7 @@ namespace VirtualShop_Back.Models{
         public int stock {get; set;}
         public decimal price {get; set;}
         public string image {get; set;}
-        public string rating {get; set;}
+        public int rating {get; set;}
         public string state {get; set;}
 
         public int idProductType{get;set;}
