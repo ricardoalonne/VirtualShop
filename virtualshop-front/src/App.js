@@ -4,6 +4,7 @@ import Navbar from './components/client/Navbar';
 import Products from './components/client/Products';
 import CheckOutPage from './components/client/CheckOutPage';
 import {Switch, BrowserRouter as Router, Route} from "react-router-dom";
+import Checkout from "./components/client/CheckoutForm/Checkout"
 
 function App() {
   return (
@@ -15,9 +16,14 @@ function App() {
             <CheckOutPage/>
           </Route>
 
+          <Route path="/checkout">
+            <Checkout/>
+          </Route>
+
           <Route path="/">
             <Products/>
           </Route>
+
         </Switch>
       </Router>
     </div>

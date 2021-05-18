@@ -75,7 +75,7 @@ export default function ChekOutCard({product}) {
         title={product.name}
       />
       
-      <CardActions disableSpacing className="cardActions">
+      <CardActions disableSpacing className={classes.cardActions}>
         <div className={classes.cardRating}>
         {
             Array(product.rating)
