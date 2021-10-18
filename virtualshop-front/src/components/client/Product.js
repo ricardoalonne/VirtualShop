@@ -6,15 +6,15 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-//import Collapse from '@material-ui/core/Collapse';
+import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ShareIcon from '@material-ui/icons/Share';
-//import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { AddShoppingCart } from '@material-ui/icons';
 import accounting from "accounting"
 import { actionTypes } from '../../helpers/reducer';
-
+import {useState} from 'react'
 import { useStateValue } from '../../helpers/StateProvider';
 
 const useStyles = makeStyles((theme) => ({
@@ -52,13 +52,13 @@ export default function Product({product}) {
   const classes = useStyles();
   const [{basket}, dispatch] = useStateValue()
 
-  //const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = useState(false);
   
-  /*
+  
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-  */
+  
 
   const addToBasket = () => {
     dispatch(
@@ -134,21 +134,31 @@ export default function Product({product}) {
             <IconButton aria-label="add to cart" onClick={addToBasket}>
               <AddShoppingCart fontSize="large" />
             </IconButton>
-            <IconButton aria-label="share">
+            {/* <IconButton aria-label="share">
               <ShareIcon />
+            </IconButton> */}
+            
+            <IconButton
+              expand={expanded}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+            <Typography component='h6' color='textSecondary'>
+              Stock
+            </Typography>
+            <ExpandMoreIcon />
             </IconButton>
           </div>
-          
         </CardActions>
-      {/*
+      {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
             <Typography paragraph>
-                Una descripcion
+                Quedan {product.stock} unidades en tienda.
             </Typography>
         </CardContent>
-      </Collapse>
-      */}
+      </Collapse>}
     </Card>
   );
 }

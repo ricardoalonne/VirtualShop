@@ -15,15 +15,12 @@ function App() {
           <Route path="/checkout-page">
             <CheckOutPage/>
           </Route>
-
           <Route path="/checkout">
             <Checkout/>
           </Route>
-
           <Route path="/">
             <Products/>
           </Route>
-
         </Switch>
       </Router>
     </div>

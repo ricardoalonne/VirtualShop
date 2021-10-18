@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\omria\\Proyectos\\Lima Innovation Lab\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj": {}
+    "D:\\omria\\Proyectos\\TestWeb\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj": {}
   },
   "projects": {
-    "D:\\omria\\Proyectos\\Lima Innovation Lab\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj": {
+    "D:\\omria\\Proyectos\\TestWeb\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\omria\\Proyectos\\Lima Innovation Lab\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj",
+        "projectUniqueName": "D:\\omria\\Proyectos\\TestWeb\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj",
         "projectName": "VirtualShop Back",
-        "projectPath": "D:\\omria\\Proyectos\\Lima Innovation Lab\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj",
+        "projectPath": "D:\\omria\\Proyectos\\TestWeb\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj",
         "packagesPath": "C:\\Users\\omria\\.nuget\\packages\\",
-        "outputPath": "D:\\omria\\Proyectos\\Lima Innovation Lab\\VirtualShop\\virtualshop-back\\obj\\",
+        "outputPath": "D:\\omria\\Proyectos\\TestWeb\\VirtualShop\\virtualshop-back\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import accounting from 'accounting';
-import { Button, makeStyles } from '@material-ui/core';
+import { Button, makeStyles, Typography } from '@material-ui/core';
 import { useStateValue } from '../../helpers/StateProvider';
 import { getBasketTotal } from '../../helpers/reducer';
 import { Link } from 'react-router-dom';
@@ -20,13 +20,22 @@ const useStyles = makeStyles((theme) => ({
 
 const Total = () => {
     const classes = useStyles()
-    const [{basket}, dispatch] = useStateValue()
+    const [{basket}, dispatch] = useStateValue();
+
+    console.log(basket, 'total - basket')
     return(
         <div className={classes.root}>
-            <h5>Total de productos: {basket?.length}</h5>
-            <h5>{accounting.formatMoney(getBasketTotal(basket),"S/.")}</h5>
-            <Link to="checkout">
-                <Button className={classes.button} variant="contained" color="secondary">Confirmar</Button>
+             <Typography component='h3' align='center'>
+                Total de productos:
+                <b marginLeft='1rem'>{basket?.length}</b>
+            </Typography>
+            <Link to="checkout" style={{ textDecoration: 'none' }}>
+                <Button className={classes.button} variant="contained" color="primary">
+                    <Typography component='p' align='center'>
+                        Ir a Pagar 
+                        <b marginLeft='1rem'>{accounting.formatMoney(getBasketTotal(basket),"S/.")}</b>
+                    </Typography>
+                </Button>
             </Link>
             
         </div>

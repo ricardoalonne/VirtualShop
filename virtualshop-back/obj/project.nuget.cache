@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1o8NrLwmdl4dGX1fjJaCG1lQZuNghGPT256gOvyk0EcUCD1nj+Ix/apJ9+vUBoE0ofWWDmN9PUI/YbE+yjnFNw==",
+  "dgSpecHash": "O3s9ypxuPhAxsQrnaU7ITO/0p45VDoTfacd+6VWypc/JzBV1PaeBRX/+HI6j1FzZUoxdLJ+V+D2Gp7ZvrdVPBw==",
   "success": true,
-  "projectFilePath": "D:\\omria\\Proyectos\\Lima Innovation Lab\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj",
+  "projectFilePath": "D:\\omria\\Proyectos\\TestWeb\\VirtualShop\\virtualshop-back\\VirtualShop Back.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omria\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\omria\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",

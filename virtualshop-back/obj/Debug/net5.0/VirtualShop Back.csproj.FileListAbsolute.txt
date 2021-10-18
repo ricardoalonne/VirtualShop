@@ -96,3 +96,51 @@ D:\omria\Proyectos\Lima Innovation Lab\VirtualShop\virtualshop-back\obj\Debug\ne
 D:\omria\Proyectos\Lima Innovation Lab\VirtualShop\virtualshop-back\obj\Debug\net5.0\ref\VirtualShop Back.dll
 D:\omria\Proyectos\Lima Innovation Lab\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.pdb
 D:\omria\Proyectos\Lima Innovation Lab\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.genruntimeconfig.cache
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\appsettings.Development.json
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\appsettings.json
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\VirtualShop Back.StaticWebAssets.xml
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\VirtualShop Back.exe
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\VirtualShop Back.deps.json
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\VirtualShop Back.runtimeconfig.json
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\VirtualShop Back.runtimeconfig.dev.json
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\VirtualShop Back.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\ref\VirtualShop Back.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\VirtualShop Back.pdb
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Google.Protobuf.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\K4os.Compression.LZ4.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\K4os.Hash.xxHash.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Microsoft.Bcl.HashCode.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\MySql.Data.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Ubiety.Dns.Core.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Zstandard.Net.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\MySql.Data.EntityFrameworkCore.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Renci.SshNet.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\SshNet.Security.Cryptography.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.csproj.AssemblyReference.cache
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.GeneratedMSBuildEditorConfig.editorconfig
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.AssemblyInfoInputs.cache
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.AssemblyInfo.cs
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.csproj.CoreCompileInputs.cache
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.MvcApplicationPartsAssemblyInfo.cs
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.MvcApplicationPartsAssemblyInfo.cache
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\scopedcss\bundle\VirtualShop Back.styles.css
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\staticwebassets\VirtualShop Back.StaticWebAssets.Manifest.cache
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.RazorTargetAssemblyInfo.cache
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\ref\VirtualShop Back.dll
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.pdb
+D:\omria\Proyectos\TestWeb\VirtualShop\virtualshop-back\obj\Debug\net5.0\VirtualShop Back.genruntimeconfig.cache

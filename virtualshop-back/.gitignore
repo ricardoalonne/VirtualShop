@@ -1,0 +1,13 @@
+virtualshop-back/.vscode*
+virtualshop-back/.vscode
+virtualshop-back/obj*
+virtualshop-back/bin*
+virtualshop-back/bin
+virtualshop-back/obj
+
+.vscode
+.vscode*
+obj*
+bin*
+obj
+bin

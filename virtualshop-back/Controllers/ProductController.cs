@@ -57,6 +57,21 @@ namespace VirtualShop_Back.Models
             }
         }
 
+        [HttpPut("Buy")]
+        public async Task<ActionResult> Buy([FromBody]ProductSoldDTO productToBuy){
+            var product = connection.Product.SingleOrDefault(a => a.id == productToBuy.id);
+            if(product != null && ModelState.IsValid){
+                Product productUpdate = product;
+                productUpdate.stock -= productToBuy.quantity;
+                connection.Entry(product).CurrentValues.SetValues(productUpdate);
+                await connection.SaveChangesAsync();
+                return Ok();
+            }
+            else {
+                return NotFound();
+            }
+        }
+
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id){
             var product = await connection.Product.FindAsync(id);

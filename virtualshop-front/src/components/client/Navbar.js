@@ -10,11 +10,12 @@ import { ShoppingCart } from '@material-ui/icons';
 import { Badge } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../../helpers/StateProvider';
+import StorefrontIcon from '@mui/icons-material/Storefront';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginBottom: "7rem",
+    marginBottom: "5rem",
   },
   appBar:{
     background: "green",
@@ -50,14 +51,27 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           */}
-          <Link to="/">
-            <IconButton>
-              <Typography variant="h6" /*className={classes.title}*/>
-                VirtualShop
-              </Typography>
+           <Link to="/"
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="open drawer"
+            sx={{ mr: 2 }}
+          >
+            <IconButton aria-label="home">
+              <StorefrontIcon style={{ color: "white", opacity:"0.8" }}/>
             </IconButton>
+           
           </Link>
-
+          <Typography
+            variant="h6"
+            marginLeft="2rem"
+            noWrap
+            component="div"
+            sx={{ display: { xs: 'none', sm: 'block' } }}
+          >
+            Virtual Shop
+          </Typography>
 
           <div className={classes.grow}></div>
           
@@ -70,7 +84,7 @@ export default function Navbar() {
               </IconButton>
             </Link>
             
-            <Button color="inherit">Iniciar Sesión</Button>
+            {/* <Button color="inherit">Iniciar Sesión</Button> */}
           </div>
         </Toolbar>
       </AppBar>
